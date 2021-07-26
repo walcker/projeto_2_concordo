@@ -5,6 +5,7 @@
 #include "mensagem.h"
 #include "canaltexto.h"
 #include "servidor.h"
+#include "sistema.h"
 
 using namespace std;
 
@@ -16,7 +17,7 @@ int main(){
   u.setSenha("1234");
   u.setNome("Walcker Gomes");
 
-	cout << "E-mail = " << u.getEmail() << ", Nome = " << u.getNome();
+	cout << "E-mail = " << u.getEmail() << ", Nome = " << u.getNome() << endl;
 
   cout << endl;
 
@@ -25,7 +26,7 @@ int main(){
 	m.setEnviadaPor("Walcker Gomes");
   m.setConteudo("Bom dia.");
 
-	cout << "Data/Hora = " << m.getDataHora() <<", Nome = " << m.getEnviadaPor() << ", Mensagem: " << m.getConteudo();
+	cout << "Data/Hora = " << m.getDataHora() <<", Nome = " << m.getEnviadaPor() << ", Mensagem: " << m.getConteudo() << endl;
 
   cout << endl;
 
@@ -34,7 +35,9 @@ int main(){
 	c.setVetor("walcker@ufrn.br");
 
 
-	cout << "Nome Canal = " << c.getNome() << ", Vetor = " << c.getVetor();
+	cout << "Nome Canal = " << c.getNome() << ", Vetor = " << c.getVetor() << endl;
+
+  cout << endl;
 
   Servidor s;
 	s.setId(01);
@@ -46,6 +49,14 @@ int main(){
 
 
 	cout << "Nome Usuário = " << s.getNome() << ", Servidor = " << s.getDescricao() << " Link de convite = " << s.getConvite() << " Canais no servidor: " << s.getCanais() << " Usuários logados: " << s.getIds() << endl;
+
+  cout << endl;
+
+  Sistema si;
+	si.setUsuarios("Usuários criados");
+	si.setServidores("Servidores criados");
+
+  cout << "Usuários criados = " << si.getUsuarios() << ", Servidores criados = " << si.getServidores() << endl;
 
 	return 0;
 }
