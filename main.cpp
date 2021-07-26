@@ -4,6 +4,7 @@
 #include "usuario.h"
 #include "mensagem.h"
 #include "canaltexto.h"
+#include "servidor.h"
 
 using namespace std;
 
@@ -34,6 +35,17 @@ int main(){
 
 
 	cout << "Nome Canal = " << c.getNome() << ", Vetor = " << c.getVetor();
+
+  Servidor s;
+	s.setId(01);
+	s.setNome("Walcker Gomes");
+  s.setDescricao("Servidor Geral");
+  s.setConvite("Link para Convite");
+  s.setCanais("Bate_Papo");
+  s.setIds(01);
+
+
+	cout << "Nome Usuário = " << s.getNome() << ", Servidor = " << s.getDescricao() << " Link de convite = " << s.getConvite() << " Canais no servidor: " << s.getCanais() << " Usuários logados: " << s.getIds() << endl;
 
 	return 0;
 }
