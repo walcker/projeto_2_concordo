@@ -5,18 +5,13 @@
 
 using namespace std;
 
-string Canaltexto::getNome(){
-	return nome;
-	}
-  
-void Canaltexto::setNome(string n) {
-	nome = n;
-	}
+string Canaltexto::Nome() {
+    return nome;
+}
 
-string Canaltexto::getVetor(){
-	return vetor[0];
-	}
-  
-void Canaltexto::setVetor(string v) {
-	vetor[0] = v;
-	}
+string Canaltexto::Mensagens(){
+  for(int i = 0; i < 5; i++){
+  return (mensagens[i]);
+ }
+ return 0;
+}

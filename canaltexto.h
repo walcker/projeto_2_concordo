@@ -4,17 +4,14 @@
 using namespace std;
 
 class Canaltexto {
-  private:
+  public:
 string nome;
 //vector<string> vetor; 
-string vetor[10];                                ;
+vector<string> mensagens;                                ;
 
-  public:
-string getNome();
-void setNome(string n);
+string Nome();
 
-string getVetor();
-void setVetor(string v);
+string Mensagens();
 
 };
 

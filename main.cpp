@@ -31,11 +31,19 @@ int main(){
   cout << endl;
 
   Canaltexto c;
-	c.setNome("Nome do canal");
-	c.setVetor("walcker@ufrn.br");
+	c.nome = ("Nome do canal");
+  string teste;
+	for(int i = 0; i < 5; i++){
+    cout << "Digite" << endl;
+    cin >> teste;
+      c.mensagens.push_back(teste);
+    }
 
 
-	cout << "Nome Canal = " << c.getNome() << ", Vetor = " << c.getVetor() << endl;
+	cout << "Mensagens do canal: = " << c.Nome() << endl;
+  for(int i = 0; i< 5; i++){
+      cout << c.mensagens[i] << " ";
+    }
 
   cout << endl;
 
