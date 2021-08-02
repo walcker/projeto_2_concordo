@@ -48,23 +48,48 @@ int main(){
   cout << endl;
 
   Servidor s;
-	s.setId(01);
-	s.setNome("Walcker Gomes");
-  s.setDescricao("Servidor Geral");
-  s.setConvite("Link para Convite");
-  s.setCanais("Bate_Papo");
-  s.setIds(01);
+	s.id = (01);
+	s.nome = ("Walcker Gomes");
+  s.descricao = ("Servidor Geral");
+  s.convite = ("Link para Convite");
+  for(int i = 0; i < 5; i++){
+    cout << "Digite" << endl;
+    cin >> teste;
+      s.canais.push_back(teste);
+    }
+  for(int i = 0; i < 5; i++){
+    s.ids.push_back(i);
+    }
 
 
-	cout << "Nome Usuário = " << s.getNome() << ", Servidor = " << s.getDescricao() << " Link de convite = " << s.getConvite() << " Canais no servidor: " << s.getCanais() << " Usuários logados: " << s.getIds() << endl;
+	cout << "Nome Usuário = " << s.Nome() << ", Servidor = " << s.Descricao() << " Link de convite = " << s.Convite() << " Canais no servidor: " << endl;
+  for(int i = 0; i< 5; i++){
+      cout << s.canais[i] << " ";
+    }
+  for(int i = 0; i< 5; i++){
+      cout << s.ids[i] << " ";
+    }
 
   cout << endl;
 
   Sistema si;
-	si.setUsuarios("Usuários criados");
-	si.setServidores("Servidores criados");
+	for(int i = 0; i < 5; i++){
+    cout << "Usuários" << endl;
+    cin >> teste;
+      si.usuarios.push_back(teste);
+    }
+  for(int i = 0; i < 5; i++){
+    cout << "Servidores" << endl;
+    cin >> teste;
+      si.servidores.push_back(teste);
+    }
 
-  cout << "Usuários criados = " << si.getUsuarios() << ", Servidores criados = " << si.getServidores() << endl;
+  for(int i = 0; i< 5; i++){
+      cout << si.usuarios[i] << " ";
+    }
+    for(int i = 0; i< 5; i++){
+      cout << si.servidores[i] << " ";
+    }
 
 	return 0;
 }

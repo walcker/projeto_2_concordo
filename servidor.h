@@ -4,34 +4,27 @@
 using namespace std;
 
 class Servidor {
-  private:
+  public:
 int id;
 string nome;
 string descricao;
 string convite;
-//vector<string> canais; 
-string canais[10];  
-//vector<int> id; 
-int ids[10];                              ;
+vector<string> canais; 
+//string canais[10];  
+vector<int> ids;                               ;
 
-  public:
-int getId();
-void setId(int i);
+  
+int Id();
 
-string getNome();
-void setNome(string n);
+string Nome();
 
-string getDescricao();
-void setDescricao(string d);
+string Descricao();
 
-string getConvite();
-void setConvite(string c);
+string Convite();
 
-string getCanais();
-void setCanais(string ca);
+string Canais();
 
-int getIds();
-void setIds(int id);
+int Ids();
 
 };
 

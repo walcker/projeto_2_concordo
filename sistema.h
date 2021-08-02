@@ -4,17 +4,16 @@
 using namespace std;
 
 class Sistema {
-  private:
-string usuarios[10];
-string servidores[10];
-//vector<string> vetor;                               ;
+   public:
+//string usuarios[10];
+//string servidores[10];
+vector<string> usuarios; 
+vector<string> servidores;                              ;
 
-  public:
-string getUsuarios();
-void setUsuarios(string u);
+ 
+string Usuarios();
 
-string getServidores();
-void setServidores(string s);
+string Servidores();
 
 };
 

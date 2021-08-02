@@ -5,18 +5,16 @@
 
 using namespace std;
 
-string Sistema::getUsuarios(){
-	return usuarios[0];
-	}
-  
-void Sistema::setUsuarios(string u) {
-	usuarios[0] = u;
-	}
+string Sistema::Usuarios(){
+  for(int i = 0; i < 5; i++){
+  return (usuarios[i]);
+ }
+ return 0;
+}
 
-string Sistema::getServidores(){
-	return servidores[0];
-	}
-  
-void Sistema::setServidores(string s) {
-	servidores[0] = s;
-	}
+string Sistema::Servidores(){
+  for(int i = 0; i < 5; i++){
+  return (servidores[i]);
+ }
+ return 0;
+}

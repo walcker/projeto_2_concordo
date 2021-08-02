@@ -5,50 +5,32 @@
 
 using namespace std;
 
-int Servidor::getId(){
-	return id;
-	}
+int Servidor::Id() {
+    return id;
+}
   
-void Servidor::setId(int i) {
-	id = i;
-	}
+string Servidor::Nome() {
+    return nome;
+}
+  
+string Servidor::Descricao() {
+    return descricao;
+}
 
-string Servidor::getNome(){
-	return nome;
-	}
+string Servidor::Convite() {
+    return convite;
+}
   
-void Servidor::setNome(string n) {
-	nome = n;
-	}
+string Servidor::Canais(){
+  for(int i = 0; i < 5; i++){
+  return (canais[i]);
+ }
+ return 0;
+}
 
-string Servidor::getDescricao(){
-	return descricao;
-	}
-  
-void Servidor::setDescricao(string d) {
-	descricao = d;
-	}
-
-string Servidor::getConvite(){
-	return convite;
-	}
-  
-void Servidor::setConvite(string c) {
-	convite = c;
-	}
-
-string Servidor::getCanais(){
-	return canais[0];
-	}
-  
-void Servidor::setCanais(string ca) {
-	canais[0] = ca;
-	}
-
-int Servidor::getIds(){
-	return ids[0];
-	}
-  
-void Servidor::setIds(int id) {
-	ids[0] = id;
-	}
+int Servidor::Ids(){
+  for(int i = 0; i < 5; i++){
+  return (ids[i]);
+ }
+ return 0;
+}
