@@ -11,6 +11,9 @@ using namespace std;
 
 int main(){
 
+  string teste;
+  vector<string> mensagens;
+
 	Usuario u;
 	u.setId(1);
 	u.setEmail("walcker@ufrn.br");
@@ -32,12 +35,13 @@ int main(){
 
   Canaltexto c;
 	c.nome = ("Nome do canal");
-  string teste;
+  
 	for(int i = 0; i < 5; i++){
     cout << "Digite" << endl;
     cin >> teste;
       c.mensagens.push_back(teste);
     }
+
 
 
 	cout << "Mensagens do canal: = " << c.Nome() << endl;
