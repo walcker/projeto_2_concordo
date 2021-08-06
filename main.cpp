@@ -39,11 +39,11 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
 
         //Lendo a função desejada
         switch(funcaoDesejada){
-            case 1:
+            case 1:{
                 cout << "Função escolhida 1" << endl;
                 
-                break;
-            case 2:
+                break;}
+            case 2:{
                 cout << "Função escolhida 2" << endl;
                 Usuario u;
                 u.setId(1);
@@ -52,8 +52,8 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 u.setNome("Walcker Gomes");
 
                 cout << "E-mail = " << u.getEmail() << ", Nome = " << u.getNome() << endl;
-                break;
-            /*case 3:
+                break;}
+            case 3:{
                 cout << "Escreva uma Mensagem" << endl;
                 Mensagem m;
                 m.setDataHora("02/12/1979 08:00");
@@ -61,8 +61,8 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 m.setConteudo("Bom dia.");
 
                 cout << "Data/Hora = " << m.getDataHora() <<", Nome = " << m.getEnviadaPor() << ", Mensagem: " << m.getConteudo() << endl;
-                break;
-            case 4:
+                break;}
+            case 4:{
                 cout << "Criando um canal." << endl;
                 Canaltexto c;
                 c.nome = ("Nome do canal");
@@ -79,8 +79,8 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 for(int i = 0; i< 5; i++){
                     cout << c.mensagens[i] << " ";
                   }
-                break;
-            case 5:
+                break;}
+            case 5:{
                 cout << "Criando Servidor" << endl;
                 Sistema si;
                 for(int i = 0; i < 5; i++){
@@ -100,10 +100,11 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                   for(int i = 0; i< 5; i++){
                     cout << si.servidores[i] << " ";
                   }
-                break;
-            case 9:
+                break;}
+            case 9:{
                 cout << "saindo do sistema" << endl;
-                break;*/
+                exit(0);
+                break;}
         }
 
     }
