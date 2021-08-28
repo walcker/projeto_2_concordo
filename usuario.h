@@ -4,14 +4,14 @@
 using namespace std;
 
 class Usuario {
-  private:
+  public:
 int id;
 string email;
 string senha;
 string nome;
 
 
-  public:
+  
 int getId();
 void setId(int i);
 
