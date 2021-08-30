@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <map>
 #include "usuario.h"
 #include "mensagem.h"
 #include "canaltexto.h"
@@ -15,10 +16,14 @@ void limpaTela(){
 
 int main(){
 
+  //Permite usar acentos
+    setlocale(LC_ALL,"");
+
   //Variáveis
   int funcaoDesejada = 1;
   string teste;
   vector<string> mensagens;
+  vector<string> usuarios;
 
 while(funcaoDesejada < 10 && funcaoDesejada > 0){
 
@@ -41,6 +46,17 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
         switch(funcaoDesejada){
             case 1:{
                 cout << "Função escolhida 1" << endl;
+                vector<string>::iterator it;
+                Usuario u;
+                for (it = usuarios.begin(); it != usuarios.end(); ++it) {
+                    if(usuarios ==  usuarios){
+                        cout << "Usuário logado." << endl;
+                    }else{
+                        cout << "Usuário não encontrado." << endl;
+                    }
+                }
+                cout << endl;
+
                 
                 break;}
             case 2:{
@@ -48,6 +64,7 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 Usuario u;
                 u.setId(1);
                 u.setEmail("walcker@ufrn.br");
+                usuarios.push_back("walcker@ufrn.br");
                 u.setSenha("1234");
                 u.setNome("Walcker Gomes");
 
