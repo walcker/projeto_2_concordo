@@ -49,6 +49,7 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 vector<string>::iterator it;
                 Usuario u;
                 for (it = usuarios.begin(); it != usuarios.end(); ++it) {
+                  cout << *it << endl; 
                     if(*it == "walcker@ufrn.br"){
                         cout << "Usuário logado." << endl;
                     }else{
@@ -82,7 +83,7 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
             case 4:{
                 cout << "Criando um canal." << endl;
                 Canaltexto c;
-                c.nome = ("Nome do canal");
+                c.nome = ("Canal Geral");
                 
                 for(int i = 0; i < 5; i++){
                   cout << "Digite" << endl;

@@ -10,8 +10,9 @@ string Canaltexto::Nome() {
 }
 
 string Canaltexto::Mensagens(){
-  for(int i = 0; i < 5; i++){
-  return (mensagens[i]);
+  for(auto i = mensagens.begin() ;i != mensagens.end(); i++){
+      cout << " " << *i;
+    }
+  return 0;
  }
- return 0;
-}
+
