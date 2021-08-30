@@ -5,34 +5,18 @@
 
 using namespace std;
 
-int Usuario::getId(){
+int Usuario::Id(){
 	return id;
 	}
-  
-void Usuario::setId(int i) {
-	id = i;
-	}
 
-string Usuario::getEmail(){
+string Usuario::Email(){
 	return email;
 	}
-  
-void Usuario::setEmail(string e) {
-	email = e;
-	}
 
-string Usuario::getSenha(){
+string Usuario::Senha(){
 	return senha;
 	}
-  
-void Usuario::setSenha(string s) {
-	senha = s;
-	}
 
-string Usuario::getNome(){
+string Usuario::Nome(){
 	return nome;
-	}
-  
-void Usuario::setNome(string n) {
-	nome = n;
 	}

@@ -49,7 +49,7 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 vector<string>::iterator it;
                 Usuario u;
                 for (it = usuarios.begin(); it != usuarios.end(); ++it) {
-                    if(usuarios ==  usuarios){
+                    if(*it == "walcker@ufrn.br"){
                         cout << "Usuário logado." << endl;
                     }else{
                         cout << "Usuário não encontrado." << endl;
@@ -62,13 +62,13 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
             case 2:{
                 cout << "Função escolhida 2" << endl;
                 Usuario u;
-                u.setId(1);
-                u.setEmail("walcker@ufrn.br");
+                u.id = (1);
+                u.email = ("walcker@ufrn.br");
                 usuarios.push_back("walcker@ufrn.br");
-                u.setSenha("1234");
-                u.setNome("Walcker Gomes");
+                u.senha = ("1234");
+                u.nome = ("Walcker Gomes");
 
-                cout << "E-mail = " << u.getEmail() << ", Nome = " << u.getNome() << endl;
+                cout << "E-mail = " << u.Email() << ", Nome = " << u.Nome() << endl;
                 break;}
             case 3:{
                 cout << "Escreva uma Mensagem" << endl;

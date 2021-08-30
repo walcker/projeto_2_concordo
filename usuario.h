@@ -12,17 +12,13 @@ string nome;
 
 
   
-int getId();
-void setId(int i);
+int Id();
 
-string getEmail();
-void setEmail(string e);
+string Email();
 
-string getSenha();
-void setSenha(string s);
+string Senha();
 
-string getNome();
-void setNome(string n);
+string Nome();
 
 };
 
