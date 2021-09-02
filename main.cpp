@@ -78,6 +78,12 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 m.setEnviadaPor("Walcker Gomes");
                 m.setConteudo("Bom dia.");
 
+                vector<string>::iterator it;
+                mensagens.push_back("Bom dia");
+                for (it = mensagens.begin(); it != mensagens.end(); ++it){
+                  cout << *it << endl;
+                }
+
                 cout << "Data/Hora = " << m.getDataHora() <<", Nome = " << m.getEnviadaPor() << ", Mensagem: " << m.getConteudo() << endl;
                 break;}
             case 4:{
@@ -85,22 +91,25 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 Canaltexto c;
                 c.nome = ("Canal Geral");
                 
-                for(int i = 0; i < 5; i++){
+                vector<string>::iterator it;
+                for(it = mensagens.begin() ;it != mensagens.end(); it++){
                   cout << "Digite" << endl;
+                  
                   cin >> teste;
-                    c.mensagens.push_back(teste);
-                  }
-
-
-
-                cout << "Mensagens do canal: = " << c.Nome() << endl;
-                for(int i = 0; i< 5; i++){
-                    cout << c.mensagens[i] << " ";
-                  }
-                break;}
+                    c.mensagens.push_back(teste);       
+                    }
+              
+                for (it = mensagens.begin(); it != mensagens.end(); ++it) {
+                  cout << *it << endl; 
+                }
+                cout << endl;
+                  break;}              
+                
             case 5:{
                 cout << "Criando Servidor" << endl;
                 Sistema si;
+
+                vector<string>::iterator i;
                 for(int i = 0; i < 5; i++){
                   cout << "Usuários" << endl;
                   cin >> teste;
