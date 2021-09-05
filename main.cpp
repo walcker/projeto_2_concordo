@@ -61,7 +61,7 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 
                 break;}
             case 2:{
-                cout << "Função escolhida 2" << endl;
+                cout << "Cadastrar usuário" << endl;
                 Usuario u;
                 u.id = (1);
                 u.email = ("walcker@ufrn.br");
@@ -95,8 +95,8 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 for(it = mensagens.begin() ;it != mensagens.end(); it++){
                   cout << "Digite" << endl;
                   
-                  cin >> teste;
-                    c.mensagens.push_back(teste);       
+                  cin >> *it;
+                    c.mensagens.push_back(*it);       
                     }
               
                 for (it = mensagens.begin(); it != mensagens.end(); ++it) {
