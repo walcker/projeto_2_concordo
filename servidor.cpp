@@ -22,15 +22,15 @@ string Servidor::Convite() {
 }
   
 string Servidor::Canais(){
-  for(int i = 0; i < 5; i++){
-  return (canais[i]);
- }
+  for(auto i = usuarioServidor.begin() ;i != usuarioServidor.end(); i++){
+      cout << " " << *i;
+  }
  return 0;
 }
 
 int Servidor::Ids(){
-  for(int i = 0; i < 5; i++){
-  return (ids[i]);
+  for(auto i = usuarioServidor.begin() ;i != usuarioServidor.end(); i++){
+      cout << " " << *i;
  }
  return 0;
 }
