@@ -34,3 +34,10 @@ int Servidor::Ids(){
  }
  return 0;
 }
+
+string Servidor::UsuarioServidor(){
+  for(auto i = usuarioServidor.begin() ;i != usuarioServidor.end(); i++){
+      cout << " " << *i;
+    }
+  return 0;
+ }

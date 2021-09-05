@@ -11,7 +11,8 @@ string descricao;
 string convite;
 vector<string> canais; 
 //string canais[10];  
-vector<int> ids;                               ;
+vector<int> ids; 
+vector<string> usuarioServidor;                              ;
 
   
 int Id();
@@ -25,6 +26,8 @@ string Convite();
 string Canais();
 
 int Ids();
+
+string UsuarioServidor();
 
 };
 

@@ -25,6 +25,7 @@ int main(){
   vector<string> mensagens;
   vector<string> mensagensCanal;
   vector<string> usuarios;
+  vector<string> usuarioServidor;
 
 while(funcaoDesejada < 10 && funcaoDesejada > 0){
 
@@ -94,7 +95,7 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 vector<string>::iterator it;
                 mensagensCanal.push_back("");
                 for(it = mensagensCanal.begin() ;it != mensagensCanal.end(); it++){
-                  cout << "Digite" << endl;
+                  cout << "Digite o nome do Canal" << endl;
                   
                   cin >> *it;
                     c.mensagensCanal.push_back(*it);       
@@ -107,28 +108,24 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                   break;}              
                 
             case 5:{
-                cout << "Criando Servidor" << endl;
-                Sistema si;
-
-                vector<string>::iterator i;
-                for(int i = 0; i < 5; i++){
-                  cout << "Usuários" << endl;
-                  cin >> teste;
-                    si.usuarios.push_back(teste);
-                  }
-                for(int i = 0; i < 5; i++){
-                  cout << "Servidores" << endl;
-                  cin >> teste;
-                    si.servidores.push_back(teste);
-                  }
-
-                for(int i = 0; i< 5; i++){
-                    cout << si.usuarios[i] << " ";
-                  }
-                  for(int i = 0; i< 5; i++){
-                    cout << si.servidores[i] << " ";
-                  }
-                break;}
+                cout << "Criando um servidor." << endl;
+                Servidor s;
+                
+                vector<string>::iterator it;
+                usuarioServidor.push_back("");
+                for(it = usuarioServidor.begin() ;it != usuarioServidor.end(); it++){
+                  cout << "Digite o nome do Servidor" << endl;
+                  
+                  cin >> *it;
+                    s.usuarioServidor.push_back(*it);       
+                    }
+              
+                for (it = usuarioServidor.begin(); it != usuarioServidor.end(); ++it) {
+                  cout << *it << endl; 
+                }
+                cout << endl;
+                  break;}
+              
             case 9:{
                 cout << "saindo do sistema" << endl;
                 exit(0);
