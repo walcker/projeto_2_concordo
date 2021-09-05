@@ -23,6 +23,7 @@ int main(){
   int funcaoDesejada = 1;
   string teste;
   vector<string> mensagens;
+  vector<string> mensagensCanal;
   vector<string> usuarios;
 
 while(funcaoDesejada < 10 && funcaoDesejada > 0){
@@ -89,17 +90,17 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
             case 4:{
                 cout << "Criando um canal." << endl;
                 Canaltexto c;
-                c.nome = ("Canal Geral");
                 
                 vector<string>::iterator it;
-                for(it = mensagens.begin() ;it != mensagens.end(); it++){
+                mensagensCanal.push_back("");
+                for(it = mensagensCanal.begin() ;it != mensagensCanal.end(); it++){
                   cout << "Digite" << endl;
                   
                   cin >> *it;
-                    c.mensagens.push_back(*it);       
+                    c.mensagensCanal.push_back(*it);       
                     }
               
-                for (it = mensagens.begin(); it != mensagens.end(); ++it) {
+                for (it = mensagensCanal.begin(); it != mensagensCanal.end(); ++it) {
                   cout << *it << endl; 
                 }
                 cout << endl;

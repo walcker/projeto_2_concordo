@@ -16,3 +16,10 @@ string Canaltexto::Mensagens(){
   return 0;
  }
 
+ string Canaltexto::MensagensCanal(){
+  for(auto i = mensagensCanal.begin() ;i != mensagensCanal.end(); i++){
+      cout << " " << *i;
+    }
+  return 0;
+ }
+
