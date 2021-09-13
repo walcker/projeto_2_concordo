@@ -109,15 +109,9 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 
             case 5:{
                 cout << "Criando um servidor." << endl;
-                Sistema s("Mensagens de entrada");
-                string resultado;
-
-                resultado = s.cadastrarUsuario("walcker@ufrn.br", "walcker123", "Walcker Gomes");
-                cout << resultado << endl;
-                resultado = s.cadastrarUsuario("cynara@ufrn.br", "cynara123", "Cynara Grilo");
-                cout << resultado << endl;
-
-                /*vector<string>::iterator it;
+                Servidor s;
+                
+                vector<string>::iterator it;
                 usuarioServidor.push_back("");
                 for(it = usuarioServidor.begin() ;it != usuarioServidor.end(); it++){
                   cout << "Digite o nome do Servidor" << endl;
@@ -129,7 +123,7 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 for (it = usuarioServidor.begin(); it != usuarioServidor.end(); ++it) {
                   cout << *it << endl; 
                 }
-                cout << endl;*/
+                cout << endl;
                   break;}
               
             case 9:{
