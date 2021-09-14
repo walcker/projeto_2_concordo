@@ -1,19 +1,14 @@
 #ifndef SISTEMA_H
 #define SISTEMA_H
+#include <string>
 
 using namespace std;
 
 class Sistema {
    public:
-//string usuarios[10];
-//string servidores[10];
-vector<string> usuarios; 
-vector<string> servidores;                              ;
+string nome;                             ;
 
- 
-string Usuarios();
-
-string Servidores();
+Sistema(string nome);
 
 };
 

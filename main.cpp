@@ -36,6 +36,7 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
         cout << "3 - Escrever uma mensagem." << endl;
         cout << "4 - Criar canal." << endl;
         cout << "5 - Criar servidor." << endl;
+        cout << "6 - Usuários logados." << endl;
         cout << "9 - Sair do sistema." << endl;
         cout << "Escolha um número e pressione ENTER." << endl;
 
@@ -117,15 +118,26 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                   cout << "Digite o nome do Servidor" << endl;
                   
                   cin >> *it;
-                    s.usuarioServidor.push_back(*it);       
+                    s.usuarioServidor.push_back(*it);   
                     }
               
                 for (it = usuarioServidor.begin(); it != usuarioServidor.end(); ++it) {
                   cout << *it << endl; 
                 }
                 cout << endl;
+
+
                   break;}
-              
+            case 6:{
+                cout << "Usuários logados" << endl;
+                vector<string>::iterator it;
+                Sistema s("Usuários no sistema atualmente.");
+                
+                cout << endl;
+
+                
+                break;} 
+                 
             case 9:{
                 cout << "saindo do sistema" << endl;
                 exit(0);
