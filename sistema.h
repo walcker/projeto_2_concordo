@@ -3,13 +3,15 @@
 #include <string>
 #include <vector>
 #include "user.h"
+#include <map>
 
 using namespace std;
 
 class Sistema {
    public:
 string nome; 
-vector<User> users;                            ;
+vector<User> users;
+map<int, string> usersLogados; //id do usuário e o nome                          ;
 
 Sistema(string nome);
 
