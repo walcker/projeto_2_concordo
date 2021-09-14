@@ -132,6 +132,13 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
                 cout << "Usuários logados" << endl;
                 vector<string>::iterator it;
                 Sistema s("Usuários no sistema atualmente.");
+                string imprimir;
+
+                imprimir = s.cadastrarUser("Walcker Gomes", "walcker@ufrn.br", "walcker123");
+                cout << imprimir << endl;
+                imprimir = s.cadastrarUser("Cynara Grilo", "cynara@ufrn.br", "cynara123");
+                cout << imprimir << endl;
+              
                 
                 cout << endl;
 
