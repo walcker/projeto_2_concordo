@@ -136,7 +136,11 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
 
                 imprimir = s.cadastrarUser("Walcker Gomes", "walcker@ufrn.br", "walcker123");
                 cout << imprimir << endl;
+
                 imprimir = s.cadastrarUser("Cynara Grilo", "cynara@ufrn.br", "cynara123");
+                cout << imprimir << endl;
+
+                imprimir = s.listarUser();
                 cout << imprimir << endl;
               
                 

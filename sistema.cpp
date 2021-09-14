@@ -19,5 +19,14 @@ string Sistema::logarUser(string email, string senha){
   return "Não implementado.";
 }
 string Sistema::listarUser(){
-  return "Não implementado.";
+  vector<User>::iterator userAtual;
+  string retorno = "";
+  userAtual = this->users.begin();
+  while(userAtual != this->users.end()){
+    retorno = retorno + userAtual->nome + "\n";
+
+    userAtual++;
+  }
+
+  return retorno;
 }
