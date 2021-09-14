@@ -142,6 +142,11 @@ while(funcaoDesejada < 10 && funcaoDesejada > 0){
 
                 imprimir = s.listarUser();
                 cout << imprimir << endl;
+
+                imprimir = s.logarUser("cynara@ufrn.br", "cynara123");
+                cout << imprimir << endl;
+                imprimir = s.logarUser("cynara@ufrn.br", "cynara132");
+                cout << imprimir << endl;
               
                 
                 cout << endl;

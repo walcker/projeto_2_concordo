@@ -31,13 +31,14 @@ string Sistema::logarUser(string email, string senha){
       usuarioId.first = userAtual->id;
       usuarioId.second = nome;
       this->usersLogados.insert(usuarioId);
+      return "Login com sucesso para " + userAtual->nome;
    }
   
    userAtual++;
  }
 
 
-  return "Não implementado.";
+  return "Email/senha não encontrados.";
 }
 string Sistema::listarUser(){
   vector<User>::iterator userAtual;
